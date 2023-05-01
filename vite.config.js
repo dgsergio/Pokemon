@@ -7,5 +7,8 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     setupFiles: ['./jest-setup.js'],
+    coverage: {
+      exclude: ['src/mocks/**', 'src/__test__/**'],
+    },
   },
 });

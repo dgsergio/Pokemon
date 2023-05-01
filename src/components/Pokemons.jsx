@@ -32,6 +32,7 @@ export default function Pokemons({ pokemonList }) {
           <Pokemon
             totalHandler={totalHandler}
             key={poke.id}
+            id={poke.id}
             image={poke.image}
             name={poke.name}
             description={poke.description}

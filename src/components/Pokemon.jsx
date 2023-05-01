@@ -6,6 +6,7 @@ export default function Pokemon({
   description,
   price,
   totalHandler,
+  id,
 }) {
   return (
     <div className="card">
@@ -17,7 +18,9 @@ export default function Pokemon({
           {name} - ${price}
         </h3>
         <p>{description}</p>
-        <button onClick={() => totalHandler(price)}>Add</button>
+        <button data-testid={id} onClick={() => totalHandler(price)}>
+          Add
+        </button>
       </div>
     </div>
   );
